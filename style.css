@@ -1,0 +1,42 @@
+.navbar-brand{
+    font-weight: 400 !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+}
+.background-img{
+    background-color: #999d86;
+}
+.ship{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.year{
+    letter-spacing: 5px !important;
+    text-transform: uppercase;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.year_1{
+    width: 25%;
+    margin-left: 110px;
+    box-shadow: 200px 200px 5px  black;
+}
+.item{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+}
+.self-padding{
+    padding: 20px 0;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.product-img{
+    width: 200px;
+    height: 350px;
+}
+.product-name{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
