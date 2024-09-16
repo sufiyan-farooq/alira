@@ -51,3 +51,18 @@
 .img-3{
     margin-left: 30px;
 }
+.connect{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #d3d3d3;
+}
+.foot-2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #d3d3d3;
+}
+.Label{
+    font-size: 17px;
+}
+input{
+    border-radius: 10px;
+}
