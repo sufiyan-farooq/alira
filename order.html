@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="order.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="bg">
+        <!-- <img src="https://images3.alphacoders.com/853/85305.jpg" /> -->
+    </div>
+    <h1 id="title" class="centered">Order Form</h1>
+    <div id="form-div" >
+        <p id="description">Please specify your contact info and order details here, I will send you invoice upon receiving your order</p>
+        <form action="https://formsubmit.co/ahada00077@gmail.com" method="post" id="survey-form">
+            
+            <div class="item-line">
+                <label id="name-label" for="name" class="item-left">Name<span style="color: red;">*</span>:</label>
+                <div class="item-right">
+                    <input id="name" type="name" placeholder="Input a name" required="true" name="Name">
+                </div>
+            </div>
+            
+            <div class="item-line">
+                <label id="email-label" for="email" class="item-left">email<span style="color: red;">*</span>:</label>
+                <div class="item-right">
+                    <input id="email" type="email" placeholder="Input an email" required="true" name="Email">
+                </div>
+            </div>
+            
+            <div class="item-line">
+                <label id="tel-label" for="tel" class="item-left">Tel:</label>
+                <div class="item-right">
+                    <input id="tel" type="tel" placeholder="Input a phone number" name="Ph number">
+                </div>
+            </div>
+            
+           
+            
+            <div class="item-line">
+                <label id="addr-label" for="addr" class="item-left">Addr<span style="color: red;">*</span>:</label>
+                <div class="item-right">
+                    <input id="addr" type="text" placeholder="Input an address" name="address">
+                </div>
+            </div>
+            
+          
+           
+            
+            <div class="item-line">
+                <label id="number-label" for="number" class="item-left">Order Quantity<span style="color: red;">*</span>:</label>
+                <div class="item-right">
+                    <input id="number" type="number" min="1" max="10" placeholder="1-10" name="Quantity">
+                </div>
+            </div>
+            
+            <div class="item-line">
+                <label id="req-label" for="other-req" class="item-left">Other requirements:</label>
+                <div class="item-right">
+                    <textarea name="requirements" id="other-req" type="text" placeholder="Special color/ material, etc"></textarea>
+                </div>
+            </div>
+            
+            <div class="centered item-line">
+                <input type="submit" id="submit">
+            </div>
+            
+        </form>
+    </div>
+</body>
+</html>

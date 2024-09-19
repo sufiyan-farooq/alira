@@ -14,9 +14,9 @@
     text-transform: uppercase;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-.year_1{
-    width: 25%;
-    margin-left: 110px;
+.year_1{ 
+    width: 10% !important;
+    margin-left: 150px !important;
     box-shadow: 200px 200px 5px  black;
 }
 .item{
