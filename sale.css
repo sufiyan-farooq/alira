@@ -1,195 +1,77 @@
+/* Navbar Start */
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 .navbar-brand{
-    font-weight: 400 !important;
-    letter-spacing: 2px !important;
-    text-transform: uppercase !important;
+  font-weight: 400 !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
 }
-.background-img{
-    background-color: #999d86;
+nav.navbar.navbar-expand-lg.bg-body-tertiary {
+  padding: 0px;
 }
-.ship{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.navbar-brand {
+  font-size: 32px !important;
+
+}
+.nav-link{
+  /* margin-right: 20px; */
+  font-size: 18px !important;
+  cursor: pointer;
+}
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+
+} 
+}
+/* Navbar Section End */
+/* Img Section */
+.self-padding{
+  padding: 60px 0;
+}
+.hero-section{width: 100%;height: 400px;display: flex;justify-content: center;align-items: center;padding-top: 50px;background-color: #999d86;}
+
+.hero-section > div img {
+    padding-bottom: 50px;
 }
 .year{
-    letter-spacing: 5px !important;
-    text-transform: uppercase;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 5px !important;
+  text-transform: uppercase;
 }
 .year_1{
-    width: 10% !important;
-    margin-left: 150px !important;
-    box-shadow: 200px 200px 5px  black;
+  width: 10%;
+  margin: 0 auto;
 }
-.self-padding{
-    padding: 80px 0;    
+.name{
+  margin-top: 10px;
+  font-size: 20px !important;
 }
-
-/* card */
-.dress-card-img-top {
-    width:100%;
-    border-radius: 7px 7px 0 0;
-  }
-  
-  .dress-card-body {
-    padding:1rem;
-    background: #fff;
-    border-radius: 0 0 7px 7px;
-  }
-  
-  .dress-card-title {
-    line-height: 0.5rem;
-  }
-  
-  .dress-card-crossed {
-    text-decoration: line-through;
-  }
-  
-  .dress-card-price {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-  
-  .dress-card-off {
-    color: #999d86;
-  }
-  
-  .dress-card-para {
-    margin-bottom: 0.2rem;
-    font-size: 1.0rem;
-    margin-bottom: 0rem;
-  }
-  
-  .dress-card {
-    border-radius: 14px;
-  }
-  
-  .dress-card-heart {
-    font-size: 1em;
-    color: #999d86;
-    margin: 4.5px;
-    position: absolute;
-    left: 4px;
-    top: 0px;
-    
-  }
-  
-  .surprise-bubble {
-    position: absolute;
-    bottom: 12rem;
-    right: 2rem;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    background: #fff;
-    padding: 1rem;
-    color: white;
-    -webkit-transition: all 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: all 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
-  
-  .surprise-bubble a {
-    font-size: 0.65em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: white;
-    font-family: arial;
-    text-decoration: none;
-    position: absolute;
-    top: 9px;
-    left: 20px;
-    opacity: 0;
-    -webkit-transition-delay: 2s;
-    /* Safari */
-    transition-delay: 2s;
-    -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
-  
-  .surprise-bubble:hover {
-    border-radius: 999rem;
-    padding: 1rem;
-    width: 26%;
-    height: 30px;
-    background: #999d86;
-    color: white;
-    -webkit-transition: all 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: all 0.55s cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
-  
-  .surprise-bubble:hover a {
-    opacity: 1;
-    -webkit-transition-delay: 2s;
-    /* Safari */
-    transition-delay: 2s;
-    -webkit-transition: opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  }
-  
-  .card-button {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 15px;
-    padding: 9px;
-  }
-  .card-button a {
-    text-decoration: none;
-  }
-  
-  .card-button-inner {
-    padding: 10px;
-    border-radius: 3px;
-  }
-  
-  .bag-button {
-    background: #999d86;
-    color: white;
-  }
-  
-  .bag-button :hover{
-    background: #999d86;
-  }
-  
-  .wish-button {
-    border: 1px solid #d3d3d3;
-    color: #d3d3d3;
-  }
-  .Sheesh{
-    font-size: 18px !important;
-    font-weight: 400;
-  }
-  .husan{
-    background-color:  #391610;
-  }
-  .gulab{
-    background-color: #887591;
-  }
-  a {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    
-    display: inline-block;
-    padding: 15px 20px;
-    position: relative;
-  }
-  a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
-  @media screen and (max-height: 300px) {
-    ul {
-      margin-top: 40px;
-    }
-  }
+/* Img Section End */

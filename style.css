@@ -1,4 +1,4 @@
-/* Animation start */
+Animation start
 * {
   margin: 0;
   padding: 0;
@@ -458,8 +458,41 @@ a:hover:after {
 .self-padding{
   padding: 60px 0;
 }
-.hero-section{width: 100%;height: 400px;display: flex;justify-content: center;align-items: center;padding-top: 50px;background-color: #999d86;}
+/* .hero-section{width: 100%;height: 400px;display: flex;justify-content: center;align-items: center;padding-top: 50px;background-color: #999d86;} */
 
+
+.hero-section {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background-video__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+/* 
+.overlay-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+  margin-top: 250px;
+}
+
+.overlay-content h3 {
+  color: #fff;
+  font-family:Verdana, Geneva, Tahoma, sans-serif !important;
+  
+} */
 .hero-section > div img {
     padding-bottom: 50px;
 }
@@ -477,44 +510,80 @@ a:hover:after {
 }
 /* Img Section End */
 /* About Section */
-.about{
+.about {
   letter-spacing: 2px;
   font-weight: 700;
   color: #999d86;
-  /* margin-left: 100px; */
 }
+
+.about-text {
+  display: block;
+}
+
 .boo {
-	border: none;
-	background: #999d86;
-	color: #f2f2f2;
-	padding: 10px 35px;
-	font-size: 18px;
-	border-radius: 5px;
-	position: relative;
-	box-sizing: border-box;
-	transition: all 500ms ease; 
-  overflow:hidden
+  border: none;
+  background: #999d86;
+  color: #f2f2f2;
+  padding: 10px 35px;
+  font-size: 18px;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease;
+  overflow: hidden;
 }
 
 .boo:before {
-	font-family: FontAwesome;
-	content:"\f217";
-	position: absolute;
-	top: 11px;
-	left: -30px;
-	transition: all 200ms ease;
+  font-family: FontAwesome;
+  content: "\f217";
+  position: absolute;
+  top: 11px;
+  left: -30px;
+  transition: all 200ms ease;
 }
 
 .boo:hover:before {
-	left: 7px;
+  left: 7px;
 }
 
 .boo:hover {
   box-shadow: 1px 3px 8px #000;
 }
-.card{
-  margin: 30px;
+
+.image-container {
+  text-align: center;
 }
+
+.image-item {
+  margin-bottom: 20px;
+}
+
+.mobile-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    display: none;
+  }
+  
+  .image-container img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .mobile-button {
+    display: inline-block; /* Show button under each image on mobile */
+    margin-top: 10px;
+    padding: 8px 20px;
+    font-size: 16px;
+    width: 50%;
+  }
+  .remove{
+    display: none;
+  }
+}
+
 /* About Section End */
 /* Customer Section */
 .Review{
@@ -728,3 +797,40 @@ color: #fff;
 font-size: 14px;
 color: #878787;
 }
+/* Footer Section End */
+/* Video Section */
+.video-section {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-card {
+  width: 100%;
+  max-width: 300px; /* Adjust based on available screen space */
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 9 / 16; /* Based on 720x1280 portrait ratio */
+}
+
+.video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .video-card {
+      max-width: 250px; /* Smaller size on mobile screens */
+  }
+  .vid{
+    font-size: 13px;
+  }
+}
+.vid{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* Video Section End */
