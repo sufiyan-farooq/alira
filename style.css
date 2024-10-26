@@ -251,7 +251,6 @@ top: 0px;
   left: -90%;
 }
 
-/**************************/
 
 #hero-text {
     position: absolute;
@@ -417,13 +416,22 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary {
   font-size: 32px !important;
 
 }
+
 .nav-link{
   /* margin-right: 20px; */
   font-size: 18px !important;
   cursor: pointer;
 }
+.navbar {
+  background-color: transparent !important;
+}
+
+.navbar-toggler {
+  background-color: transparent !important;
+}
+
 a {
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
